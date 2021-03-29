@@ -1,5 +1,5 @@
 # testApp
-This is Terraform v0.14.8 project for creating Test environment at Google Cloud Provider with Netdata monitoring system.
+This is Terraform v0.14.8 project for creating Test environment at Google Cloud Platform with Netdata monitoring system.
 How it works:
 - Creates 3 vm instance (f1-micro by default) Redis, testApp1, testApp2
 - Configuring each instance (public ip's, Redis connection, ssh connection, Netdata monitoring agent)
@@ -13,7 +13,7 @@ For setup you need:
 
 Fill up terraform.tfvars like this:
 
-- gcp_json = "xxxx.json"
-- gcp_project_name = "xxxx"
-- ssh_key_pub = "login:ssh-ed25519 XXXXXXXXXX xxxx@gmail.com"
-- netdata_token = "xxxxxxxx -rooms=xxxxx -url=https://app.netdata.cloud"
+- gcp_json = "your GCP generated.json"
+- gcp_project_name = "your GCP project name"
+- ssh_key_pub = "your login:ssh-xxx XXXXXXXXXX xxxx@xxxx.com"
+- netdata_token = "your Netdata Cloud token"
